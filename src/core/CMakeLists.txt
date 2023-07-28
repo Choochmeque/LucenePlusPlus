@@ -52,13 +52,18 @@ target_include_directories(lucene++
 # dependencies
 ####################################
 target_link_libraries(lucene++
-    Boost::boost
+    Boost::any
+    Boost::asio
+    Boost::crc
     Boost::date_time
     Boost::filesystem
+    Boost::headers
+    Boost::interprocess
     Boost::iostreams
     Boost::regex
     Boost::system
     Boost::thread
+    Boost::variant
     ZLIB::ZLIB
 )
 

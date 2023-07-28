@@ -62,7 +62,7 @@ target_include_directories(lucene++-contrib
 # dependencies
 ####################################
 target_link_libraries(lucene++-contrib
-    Boost::boost
+    Boost::headers
     Boost::date_time
     Boost::filesystem
     Boost::iostreams
