@@ -33,7 +33,8 @@ set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 include(options.cmake)
 
 # pre-compiled headers support
-include(cotire)
+# TODO: cotire is obsolete (use cmake feature)
+#include(cotire)
 
 # if setup using the Toolchain-llvm.cmake file, then use llvm...
 if(ENABLE_LLVM)

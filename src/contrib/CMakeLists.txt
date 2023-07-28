@@ -89,8 +89,9 @@ set_target_properties(lucene++-contrib
     VISIBILITY_INLINES_HIDDEN 1
     VERSION ${lucene++_VERSION}
     SOVERSION ${lucene++_SOVERSION})
-    
-cotire(lucene++-contrib)
+
+# TODO: cotire is obsolete
+#cotire(lucene++-contrib)
 
 install(TARGETS lucene++-contrib
   DESTINATION ${CMAKE_INSTALL_LIBDIR}

@@ -84,7 +84,8 @@ set_target_properties(lucene++
     VERSION ${lucene++_VERSION}
     SOVERSION ${lucene++_SOVERSION})
 
-cotire(lucene++)
+# TODO: cotire is obsolete
+#cotire(lucene++)
 
 
 install(TARGETS lucene++
